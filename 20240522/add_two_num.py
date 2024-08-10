@@ -1,8 +1,9 @@
 # Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
+from typing import Optional
+class ListNode:
+    def __init__(self, val=0, next=None):
+         self.val = val
+         self.next = next
 class Solution:
     def append(self, head: ListNode, tail: ListNode, value: int)->None:
         if head is None:
@@ -29,7 +30,7 @@ class Solution:
     def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
         carry: int = 0
         next1: Optional[ListNode] = l1
-        next2: Optional[ListNone] = l2
+        next2: Optional[ListNode] = l2
         head, tail = None, None
         digit = 0
         if not l1 and not l2:
